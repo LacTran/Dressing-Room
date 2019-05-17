@@ -4,7 +4,7 @@ const buttonArr = [
     { tabName: 'tabShoes', showName: 'Giày dép', type: 'shoes' },
     { tabName: 'tabHandBags', showName: 'Túi xách', type: 'handbags' },
     { tabName: 'tabNecklaces', showName: 'Dây chuyền', type: 'necklaces' },
-    // { tabName: 'tabModels', showName: 'Người mẫu', type: 'models' },
+    { tabName: 'tabModels', showName: 'Người mẫu', type: 'models' },
     { tabName: 'tabHairStyle', showName: 'Kiểu tóc', type: 'hairstyle' },
     { tabName: 'tabBackground', showName: 'Nền', type: 'background' }
 ];

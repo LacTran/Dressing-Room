@@ -184,7 +184,7 @@ export const Data = [
         imgSrc_jpg: './images/necklaces/necklace3_show.jpg',
         imgSrc_png: './images/necklaces/necklace3.png',
     },
-    
+
     // Hairstyle
     {
         id: 'hairstyle_1',
@@ -268,6 +268,31 @@ export const Data = [
         imgSrc_jpg: './images/background/background7_show.jpg',
         imgSrc_png: './images/background/background7.jpg',
     },
+    // Models
+    {
+        id: 'model_1',
+        type: "model",
+        name: 'Model 1',
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
+        imgSrc_jpg: './images/model/999.png',
+        imgSrc_png: './images/model/999.png'
+    },
+    {
+        id: 'model_2',
+        type: "model",
+        name: 'Model 2',
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
+        imgSrc_jpg: './images/model/1000.png',
+        imgSrc_png: './images/model/1000.png'
+    },
+    {
+        id: 'model_3',
+        type: "model",
+        name: 'Model 3',
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nulla.",
+        imgSrc_jpg: './images/model/1003.png',
+        imgSrc_png: './images/model/1003.png'
+    }
 ]
 
 export default Data;

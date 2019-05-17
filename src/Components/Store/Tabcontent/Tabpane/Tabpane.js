@@ -23,10 +23,10 @@ class Tabpane extends Component {
 
     getElmItem = (tempArr) => {
         let elmItem = tempArr.map((item, index) => {
-            return <Item 
-            key={index} 
-            item={item}
-            imgSrcTransferTabpane = {this.props.imgSrcTransferTabcontent}
+            return <Item
+                key={index}
+                item={item}
+                imgSrcTransferTabpane={this.props.imgSrcTransferTabcontent}
             />
         })
         return elmItem;
@@ -44,7 +44,7 @@ class Tabpane extends Component {
 
     render() {
         // console.log(this.state.item);
-        
+
 
         let elmItem = null;
 
@@ -68,6 +68,10 @@ class Tabpane extends Component {
                 break;
             case 'tabNecklaces':
                 tempArr = this.getTypeArr("necklaces");
+                elmItem = this.getElmItem(tempArr)
+                break;
+            case 'tabModels':
+                tempArr = this.getTypeArr("model");
                 elmItem = this.getElmItem(tempArr)
                 break;
             case 'tabHairStyle':

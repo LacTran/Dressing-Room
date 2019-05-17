@@ -7,23 +7,23 @@ import Store from './Components/Store/Store';
 import BtnGroup from './Components/Store/BtnGroup';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-      this.state ={
-        item : null
-      }
+    this.state = {
+      item: null
     }
-  
+  }
 
-  imgSrcTransferApp = (item) =>{
+
+  imgSrcTransferApp = (item) => {
     this.setState({
       item
     })
   }
-  
+
   render() {
     console.log(this.state.item);
-    
+
     return (
       <div className="App">
         <div className="container-fluid">
@@ -32,15 +32,16 @@ class App extends Component {
             {/* Chứa các items */}
             <div className="col-md-8 col-lg-8">
               <BtnGroup />
-              <Store imgSrcTransferApp = {this.imgSrcTransferApp.bind(this)}/>
+              <Store imgSrcTransferApp={this.imgSrcTransferApp.bind(this)} />
             </div>
 
             {/* Chứa người mẫu */}
             <div className="col-md-4 col-lg-4">
-              <Contain item={this.state.item}/>
+              <Contain item={this.state.item} />
             </div>
           </div>
         </div>
+        <footer className="fixed-bottom text-center mb-0"><span class="lead">Made by &copy; Lac Tran</span></footer>
       </div>
     );
   }

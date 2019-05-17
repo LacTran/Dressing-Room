@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 
-class bikinibottom extends Component {
+class bag extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            bikiniBottomStyle: {
-                // width: "250px",
-                // height: "500px",
-                // background: 'url("./images/allbody/bikini_pantsnew.png")',
-                // position: "absolute",
-                // top: "12%",
-                // left: "22%",
-                // zIndex: "3"
+            bagStyle: {
+
             }
         }
     }
@@ -22,14 +16,14 @@ class bikinibottom extends Component {
 
     changeStyle = () => {
         this.setState({
-            bikiniBottomStyle: {
+            bagStyle: {
                 width: "125%",
                 height: "125%",
-                // background: `"url(${this.props.item.imgSrc_png})"`,
+                overflow: "hidden",
                 position: "absolute",
-                top: "-17%",
+                top: "-19%",
                 left: "-9%",
-                zIndex: "1",
+                zIndex: "2",
                 transform: "scale(0.5)"
             }
         })
@@ -37,23 +31,23 @@ class bikinibottom extends Component {
 
     render() {
         let imgSrc;
-        let newStyle = this.state.bikiniBottomStyle;
+        let newStyle = this.state.bagStyle;
         // console.log(this.props.item);
 
-        if (this.props.item !== null && this.props.item.type === "botclothes") {
+        if (this.props.item !== null && this.props.item.type === "handbags") {
             imgSrc = this.props.item.imgSrc_png;
             // newStyle.background = `url(${imgSrc})`;
-            let background = `url(${imgSrc})`;
+            let background = `url(${imgSrc}) no-repeat`;
             newStyle = { ...newStyle, background }
             // newStyle
         }
 
         return (
-            <div className="bikiniBottom" style={newStyle}>
+            <div className="bag" style={newStyle}>
 
             </div>
         );
     }
 }
 
-export default bikinibottom;
+export default bag;

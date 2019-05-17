@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class feet extends Component {
+class necklace extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            feetStyle: {
+            necklaceStyle: {
 
             }
         }
@@ -16,35 +16,38 @@ class feet extends Component {
 
     changeStyle = () => {
         this.setState({
-            feetStyle: {
-                width: "500px",
-                height: "1000px",
+            necklaceStyle: {
+                width: "125%",
+                height: "125%",
                 // background: `"url(${this.props.item.imgSrc_png})"`,
                 position: "absolute",
-                top: "-30%",
-                left: "-5.1%",
-                zIndex: "1",
-                transform: "scale(0.5"
+                top: "-19%",
+                left: "-9%",
+                zIndex: "3",
+                transform: "scale(0.5)"
             }
         })
     }
 
     render() {
         let imgSrc;
-        let newStyle = this.state.feetStyle;
-        if (this.props.item !== null && this.props.item.type === "shoes") {
+        let newStyle = this.state.necklaceStyle;
+        // console.log(this.props.item);
+
+        if (this.props.item !== null && this.props.item.type === "necklaces") {
             imgSrc = this.props.item.imgSrc_png;
             // newStyle.background = `url(${imgSrc})`;
             let background = `url(${imgSrc})`;
             newStyle = { ...newStyle, background }
-
+            // newStyle
         }
+
         return (
-            <div className="foot" style={newStyle}>
-                <div className="test"></div>
-            </div >
+            <div className="necklace" style={newStyle}>
+
+            </div>
         );
     }
 }
 
-export default feet;
+export default necklace;
